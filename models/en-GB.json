@@ -1,0 +1,50 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "flip a coin",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "ChooseCoinSideIntent",
+          "slots": [
+            {
+              "name": "coinSide",
+              "type": "CoinSides"
+            }
+          ],
+          "samples": [
+            "{coinSide}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Tails"
+              }
+            },
+            {
+              "name": {
+                "value": "Heads"
+              }
+            }
+          ],
+          "name": "CoinSides"
+        }
+      ]
+    }
+  }
+}
